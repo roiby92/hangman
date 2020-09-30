@@ -1,11 +1,9 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
 
-class Letter extends Component{
+class Letter extends Component {
 
-    render (){
-        return <div>
-            letter
-        </div>
+    render() {
+        return <span className={this.props.class? this.props.class : ''}> {this.props.letter}</span>
     }
 }
 
